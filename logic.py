@@ -8,7 +8,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-BOT_TOKEN = "7556863360:AAFJV2zcVNFl_gnNAASQcOBGSwZz2aLl54s"
+BOT_TOKEN = os.environ.get('bot_token', None)
 
 FILEPATH1 = "data\\tsundere_neko_chat.txt"
 FILEPATH2 = "data\\dataset.txt"
